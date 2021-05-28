@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import CakeComp from './components/CakeComp';
+import {Provider} from 'react-redux'
+import store from "./redux/store"
+import BurgerComp from './components/BurgerComp';
+import CartComp from './components/CartComp';
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CakeComp/>
+      <BurgerComp/>
     </div>
+    <div style={{display:"flex",justifyContent:"center",margin:"100px"}}>
+    <CartComp/>
+    </div>
+    </Provider>
   );
 }
 
