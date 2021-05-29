@@ -9,7 +9,7 @@ export default function BurgerComp(props) {
     const dispatch=useDispatch()
     return (
         <div>
-            <img src={require('../images/burger.jpeg').default} alt="burger" height="210px" style={{borderRadius:"30%"}} />
+            <img src={require('../assets/burger.jpeg').default} alt="burger" height="210px" style={{borderRadius:"30%"}} />
             <h1>Available Burgers : {noOfBurgers}</h1>
             <h1>
                 {

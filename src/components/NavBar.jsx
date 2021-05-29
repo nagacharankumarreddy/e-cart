@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import Home from "../Components/Home";
 import DetailedCartComponent from "./DetailedCartComp"
 import AllItems from "./AllItems";
+import {useSelector} from "react-redux"
 
-class NavBar extends Component {
-  state = {};
-  render() {
+function NavBar() {
+    const cartItems=useSelector(state=>state.cartReducer.itemsInCart)
     return (
       <div>
         <Router>
@@ -48,11 +48,12 @@ class NavBar extends Component {
                       class="btn btn-info btn-lg  m-1 p-1 h-75 d-inline-block text-center"
                     >
                       <img
-                        src={require("../images/s-cart.png").default}
+                        src={require("../assets/s-cart.png").default}
                         alt="cart"
                         height="20px"
                         width="30px"
                       />
+                      <span class="badge badge-pill badge-danger text-success">{cartItems}</span>
                     </button>
                     </Link>
                   </a>
@@ -70,6 +71,6 @@ class NavBar extends Component {
       </div>
     );
   }
-}
+
 
 export default NavBar;

@@ -5,7 +5,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function CakeComp(props) {
     return (
         <div>
-            <img src={require('../images/cake.jpeg').default}  alt="cake"  style={{borderRadius:"30%"}} />
+            <img src={require('../assets/cake.jpeg').default}  alt="cake"  style={{borderRadius:"30%"}} />
             <h1>Available Cakes : {props.noOfCakes}</h1>
             <h1>
                 {/* <button onClick={props.buyCake}>Buy</button> */}
