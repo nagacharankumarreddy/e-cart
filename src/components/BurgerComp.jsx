@@ -1,5 +1,7 @@
 import React from 'react'
 import buyburger from "../redux/burger/burgerActions"
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 // import {connect} from "react-redux"
 import {useDispatch,useSelector} from "react-redux"
 export default function BurgerComp(props) {
@@ -7,14 +9,13 @@ export default function BurgerComp(props) {
     const dispatch=useDispatch()
     return (
         <div>
-            <img src="assets/burger.jpeg" alt="burger" height="210px" style={{borderRadius:"30%"}} />
+            <img src={require('../images/burger.jpeg').default} alt="burger" height="210px" style={{borderRadius:"30%"}} />
             <h1>Available Burgers : {noOfBurgers}</h1>
-            <div>Click on Below button to <br /> Buy Burger </div>
             <h1>
                 {
-                    noOfBurgers==="Out of Stock"?  
-                    <button disabled>Buy</button>:
-                    <button onClick={()=>dispatch(buyburger()) }>Buy</button>
+                    noOfBurgers===0?  
+                    <button className="btn" disabled>Buy</button>:
+                    <button className="btn btn-primary" onClick={()=>dispatch(buyburger()) }>Buy</button>
                 }
             </h1>
             

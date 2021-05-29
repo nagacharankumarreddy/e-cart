@@ -1,18 +1,18 @@
 import React from 'react'
 import buycake from "../redux/cake/cakeactions"
 import {connect} from "react-redux"
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function CakeComp(props) {
     return (
         <div>
-            <img src="assets/cake.jpeg" alt="cake"  style={{borderRadius:"30%"}} />
+            <img src={require('../images/cake.jpeg').default}  alt="cake"  style={{borderRadius:"30%"}} />
             <h1>Available Cakes : {props.noOfCakes}</h1>
-            <div>Click on Below button to <br /> Buy CAKE </div>
             <h1>
                 {/* <button onClick={props.buyCake}>Buy</button> */}
                 {
-                    props.noOfCakes==="Out Of Stock"?  
-                    <button disabled>Buy</button>:
-                    <button onClick={props.buyCake}>Buy</button>
+                    props.noOfCakes===0?  
+                    <button className="btn" disabled>Buy</button>:
+                    <button className="btn btn-primary" onClick={props.buyCake}>Buy</button>
                 
                 }
             </h1>

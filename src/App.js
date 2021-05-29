@@ -1,19 +1,16 @@
-import './App.css';
-import CakeComp from './components/CakeComp';
-import {Provider} from 'react-redux'
-import store from "./redux/store"
-import BurgerComp from './components/BurgerComp';
-import CartComp from './components/CartComp';
+import "./App.css";
+import CakeComp from "./components/CakeComp";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import BurgerComp from "./components/BurgerComp";
+import CartComp from "./components/CartComp";
+import NavBar from "./components/NavBar";
+import AllItems from "./components/AllItems";
 function App() {
   return (
     <Provider store={store}>
-    <div className="App">
-      <CakeComp/>
-      <BurgerComp/>
-    </div>
-    <div style={{display:"flex",justifyContent:"center",margin:"100px"}}>
-    <CartComp/>
-    </div>
+      <NavBar />
+      {/* <AllItems/> */}
     </Provider>
   );
 }
