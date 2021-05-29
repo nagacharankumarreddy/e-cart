@@ -1,20 +1,25 @@
 {
   "files": {
     "main.css": "/e-cart/static/css/main.6b2015bf.chunk.css",
-    "main.js": "/e-cart/static/js/main.5f79e79a.chunk.js",
-    "main.js.map": "/e-cart/static/js/main.5f79e79a.chunk.js.map",
+    "main.js": "/e-cart/static/js/main.bdec4b8d.chunk.js",
+    "main.js.map": "/e-cart/static/js/main.bdec4b8d.chunk.js.map",
     "runtime-main.js": "/e-cart/static/js/runtime-main.619e5da2.js",
     "runtime-main.js.map": "/e-cart/static/js/runtime-main.619e5da2.js.map",
-    "static/js/2.bf22ab64.chunk.js": "/e-cart/static/js/2.bf22ab64.chunk.js",
-    "static/js/2.bf22ab64.chunk.js.map": "/e-cart/static/js/2.bf22ab64.chunk.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/e-cart/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.aa6ffeb3.chunk.js": "/e-cart/static/js/2.aa6ffeb3.chunk.js",
+    "static/js/2.aa6ffeb3.chunk.js.map": "/e-cart/static/js/2.aa6ffeb3.chunk.js.map",
     "index.html": "/e-cart/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/e-cart/static/css/2.61b4cb56.chunk.css.map",
     "static/css/main.6b2015bf.chunk.css.map": "/e-cart/static/css/main.6b2015bf.chunk.css.map",
-    "static/js/2.bf22ab64.chunk.js.LICENSE.txt": "/e-cart/static/js/2.bf22ab64.chunk.js.LICENSE.txt"
+    "static/js/2.aa6ffeb3.chunk.js.LICENSE.txt": "/e-cart/static/js/2.aa6ffeb3.chunk.js.LICENSE.txt",
+    "static/media/burger.jpeg": "/e-cart/static/media/burger.f81209b9.jpeg",
+    "static/media/cake.jpeg": "/e-cart/static/media/cake.536d3aad.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.619e5da2.js",
-    "static/js/2.bf22ab64.chunk.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.aa6ffeb3.chunk.js",
     "static/css/main.6b2015bf.chunk.css",
-    "static/js/main.5f79e79a.chunk.js"
+    "static/js/main.bdec4b8d.chunk.js"
   ]
 }
