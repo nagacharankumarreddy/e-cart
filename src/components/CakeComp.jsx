@@ -6,7 +6,7 @@ function CakeComp(props) {
     return (
         <div>
             <img src={require('../assets/cake.jpeg').default}  alt="cake"  style={{borderRadius:"30%"}} />
-            <h1>Available Cakes : {props.noOfCakes}</h1>
+            <h1>Available : {props.noOfCakes}</h1>
             <h1>
                 {/* <button onClick={props.buyCake}>Buy</button> */}
                 {

@@ -10,7 +10,7 @@ export default function BurgerComp(props) {
     return (
         <div>
             <img src={require('../assets/burger.jpeg').default} alt="burger" height="210px" style={{borderRadius:"30%"}} />
-            <h1>Available Burgers : {noOfBurgers}</h1>
+            <h1>Available : {noOfBurgers}</h1>
             <h1>
                 {
                     noOfBurgers===0?  
@@ -18,7 +18,6 @@ export default function BurgerComp(props) {
                     <button className="btn btn-primary" onClick={()=>dispatch(buyburger()) }>Buy</button>
                 }
             </h1>
-            
         </div>
     )
 }
