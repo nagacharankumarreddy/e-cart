@@ -14,8 +14,18 @@ export default function BurgerComp(props) {
             <h1>
                 {
                     noOfBurgers===0?  
-                    <button className="btn" disabled>Buy</button>:
-                    <button className="btn btn-primary" onClick={()=>dispatch(buyburger()) }>Buy</button>
+                    <button className="btn" disabled style={{margin: '0',
+                    position: 'relative',
+                    top:'15%',
+                    left: '35%',
+                    transform: 'translateY(-50%)'}
+                   }>Buy</button>:
+                    <button className="btn btn-primary" style={{margin: '0',
+                    position: 'relative',
+                    top:'15%',
+                    left: '35%',
+                    transform: 'translateY(-50%)'}
+                   } onClick={()=>dispatch(buyburger()) }>Buy</button>
                 }
             </h1>
         </div>

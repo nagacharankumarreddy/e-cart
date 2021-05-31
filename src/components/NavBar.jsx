@@ -11,7 +11,7 @@ function NavBar() {
     return (
       <div>
         <Router>
-          <nav class="navbar navbar-expand-sm navbar-dark bg-dark  m-0">
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark  m-0 container-fluid ">
             <div class="container">
               
               <Link to="/" className=" navbar-brand btn  btn-light text-dark  ">e-Cart</Link>
